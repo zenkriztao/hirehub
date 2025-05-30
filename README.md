@@ -32,60 +32,81 @@ Sebelum menjalankan aplikasi, pastikan perangkat Anda memiliki hal-hal berikut:
 
 ## 📖 Instalasi
 
-### Langkah-langkah Instalasi
+Tentu, berikut adalah versi perbaikan untuk file `README.md` Anda dengan penyesuaian tata bahasa dan format agar lebih jelas dan rapi:
 
-1. **Clone repositori**:
-   ```bash
-   git clone https://github.com/zenkriztao/hirehub.git
-````
+---
 
-2. **Buka proyek di Android Studio**:
+# HireHub - Aplikasi Pencarian Lowongan Kerja
 
-   * Pilih **Open an existing project** dan buka folder yang telah Anda clone.
+Aplikasi untuk mencari lowongan pekerjaan dengan menggunakan API pekerjaan dan Firebase untuk autentikasi pengguna.
 
-3. **Sync Gradle**:
+## Langkah-langkah Instalasi
 
-   * Setelah membuka proyek, Android Studio akan menanyakan apakah Anda ingin melakukan **Sync Gradle**. Pilih "Sync Now".
+### 1. Clone Repositori
 
-4. **Konfigurasi Firebase**:
+Untuk memulai, clone repositori ini ke dalam direktori lokal Anda:
 
-   * Ikuti [petunjuk konfigurasi Firebase](https://firebase.google.com/docs/android/setup) untuk menambahkan Firebase ke aplikasi.
-   * Salin **google-services.json** ke dalam folder **app** proyek Anda.
+```bash
+git clone https://github.com/zenkriztao/hirehub.git
+```
 
-5. **Menjalankan Aplikasi**:
+### 2. Buka Proyek di Android Studio
 
-   * Klik tombol "Run" di Android Studio untuk menjalankan aplikasi di emulator atau perangkat fisik.
+1. Buka **Android Studio**.
+2. Pilih **Open an existing project**.
+3. Pilih folder tempat Anda meng-clone repositori ini.
 
-### Konfigurasi API
+### 3. Sync Gradle
+
+Setelah membuka proyek, Android Studio akan menanyakan apakah Anda ingin melakukan **Sync Gradle**. Pilih "Sync Now" untuk memastikan semua dependensi diunduh dengan benar.
+
+### 4. Konfigurasi Firebase
+
+1. Ikuti petunjuk di [Firebase Setup for Android](https://firebase.google.com/docs/android/setup) untuk menambahkan Firebase ke aplikasi.
+2. Unduh **google-services.json** dan salin file tersebut ke dalam folder **app** di proyek Anda.
+
+### 5. Menjalankan Aplikasi
+
+Klik tombol "Run" di Android Studio untuk menjalankan aplikasi di emulator atau perangkat fisik.
+
+---
+
+## Konfigurasi API
 
 Jika Anda ingin menggunakan API Anda sendiri untuk mendapatkan lowongan pekerjaan, pastikan untuk mengikuti langkah-langkah berikut:
 
 1. Dapatkan **API Key** dari penyedia API lowongan pekerjaan.
-2. Masukkan **API Key** tersebut di `strings.xml`:
+2. Masukkan **API Key** Anda di file `strings.xml`:
 
    ```xml
    <string name="api_key">YOUR_API_KEY_HERE</string>
    ```
+
+---
 
 ## 🧑‍💻 Cara Berkontribusi
 
 Kami menyambut baik kontribusi dari Anda! Jika Anda ingin berkontribusi pada proyek ini, ikuti langkah-langkah berikut:
 
 1. Fork repositori ini.
-2. Buat cabang untuk fitur baru (`git checkout -b feature/your-feature`).
-3. Lakukan perubahan yang diinginkan dan commit perubahan (`git commit -am 'Add your feature'`).
-4. Push cabang Anda (`git push origin feature/your-feature`).
+2. Buat cabang baru untuk fitur yang ingin Anda tambahkan (`git checkout -b feature/fitur-anda`).
+3. Lakukan perubahan yang diinginkan dan commit perubahan (`git commit -am 'Add fitur-anda'`).
+4. Push cabang Anda ke repositori Anda (`git push origin feature/fitur-anda`).
 5. Buat pull request untuk review.
 
-Harap pastikan bahwa kode Anda mengikuti standar **Kotlin** dan **Jetpack Compose** agar dapat diterima dengan mudah.
+Harap pastikan kode Anda mengikuti standar **Kotlin** dan **Jetpack Compose** agar dapat diterima dengan mudah.
+
+---
 
 ## 📝 Lisensi
 
-Proyek ini dilisensikan di bawah **MIT License** - lihat file [LICENSE](LICENSE) untuk detail lebih lanjut.
+Proyek ini dilisensikan di bawah **MIT License**. Lihat file [LICENSE](LICENSE) untuk detail lebih lanjut.
+
+---
 
 ## 📑 Acknowledgements
 
-* **Firebase**: Untuk autentikasi pengguna dan penyimpanan data.
+* **Firebase**: Digunakan untuk autentikasi pengguna dan penyimpanan data.
 * **Jetpack Compose**: Toolkit UI untuk membangun aplikasi Android modern.
 * **Kotlin**: Bahasa pemrograman yang digunakan untuk membangun aplikasi.
 * **Retrofit**: Digunakan untuk melakukan panggilan API.
