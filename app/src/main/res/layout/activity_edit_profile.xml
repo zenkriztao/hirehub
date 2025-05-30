@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_default"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_default"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvChangeabout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="left"
+            android:text="@string/change_about_applicant"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvChangeabout" />
+
+        <EditText
+            android:id="@+id/addName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/greyContinue"
+            android:background="@drawable/edit_text_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
+            android:paddingHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:hint="@string/name"
+            app:cornerRadius="30dp"/>
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/email"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/addEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/greyContinue"
+            android:background="@drawable/edit_text_background"
+            android:paddingHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:hint="@string/sample_email"
+            app:cornerRadius="30dp"/>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvSkills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/skills"
+                android:textColor="@color/black"
+                />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/addSkills"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edit_text_background"
+                    android:backgroundTint="@color/greyContinue"
+                    android:hint="@string/sample_skill"
+                    android:paddingHorizontal="16dp"
+                    android:textSize="14sp"
+                    app:cornerRadius="30dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintEnd_toStartOf="@+id/add_skill_button"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/add_skill_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="@string/add"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/tvField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/field"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/addField"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/greyContinue"
+            android:background="@drawable/edit_text_background"
+            android:paddingHorizontal="16dp"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/sampel_field"
+            app:cornerRadius="30dp" />
+
+        <TextView
+            android:id="@+id/tvDateofBirth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/date_of_birth"
+            android:textColor="@color/black" />
+        <!--        -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                style="@style/Base.Widget.AppCompat.ImageButton"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/date_of_birth"
+                android:onClick="showDatePicker"
+                android:src="@drawable/ic_date" />
+
+            <TextView
+                android:id="@+id/add_tv_due_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/date_of_birth" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvLanguages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bahasa_yang_dikuasai"
+                android:textColor="@color/black"
+                />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/addLanguages"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edit_text_background"
+                    android:backgroundTint="@color/greyContinue"
+                    android:hint="Indonesia"
+                    android:paddingHorizontal="16dp"
+                    android:textSize="14sp"
+                    app:cornerRadius="30dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintEnd_toStartOf="@+id/add_language_button"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/add_language_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="@string/add"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_group2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/tvSalary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/minimum_salary"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/addSalaryMin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/greyContinue"
+            android:background="@drawable/edit_text_background"
+            android:paddingHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:inputType="number"
+            android:hint="@string/sample_salary"
+            android:textSize="14sp"
+            app:cornerRadius="30dp"/>
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/location"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/addLocation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/greyContinue"
+            android:background="@drawable/edit_text_background"
+            android:paddingHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/sample_location"
+            android:textSize="14sp"
+            app:cornerRadius="30dp"/>
+
+        <TextView
+            android:id="@+id/tvDegree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/degree"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/addDegree"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/greyContinue"
+            android:background="@drawable/edit_text_background"
+            android:paddingHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/sample_degree"
+            android:textSize="14sp"
+            app:cornerRadius="30dp"/>
+
+        <TextView
+            android:id="@+id/tvInstitution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/institution"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/addInstitution"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/greyContinue"
+            android:background="@drawable/edit_text_background"
+            android:paddingHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/sample_instituion"
+            android:textSize="14sp"
+            app:cornerRadius="30dp"/>
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/phone_title"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/addPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/greyContinue"
+            android:background="@drawable/edit_text_background"
+            android:paddingHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/phone_sample"
+            android:inputType="number"
+            android:textSize="14sp"
+            app:cornerRadius="30dp"/>
+
+        <TextView
+            android:id="@+id/tvAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/your_description"
+            android:textColor="@color/black"
+            />
+
+
+        <EditText
+            android:id="@+id/addDescription"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:drawablePadding="10dp"
+            android:textSize="14sp"
+            android:backgroundTint="@color/greyContinue"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginTop="10dp"
+            app:cornerRadius="30dp"
+            android:hint="@string/your_description"
+            android:inputType="textMultiLine"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginHorizontal="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:backgroundTint="#DD2025"
+                android:layout_marginEnd="8dp"
+                android:text="@string/cancel"
+                />
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:backgroundTint="#29BB26"
+                android:text="@string/save" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>

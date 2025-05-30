@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <io.getstream.chat.android.ui.feature.channels.header.ChannelListHeaderView
+        android:id="@+id/channelListHeaderView"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:streamUiShowActionButton="false" />
+
+    <io.getstream.chat.android.ui.feature.channels.list.ChannelListView
+        android:id="@+id/channelListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

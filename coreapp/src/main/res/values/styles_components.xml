@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Typography.Rey.Paragraph.Small.Regular" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/typography_text_size_paragraph_s</item>
+        <item name="lineHeight">@dimen/typography_line_height_paragraph_s</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="Typography.Rey.Label.Medium.Regular" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/typography_text_size_label_m</item>
+        <item name="lineHeight">@dimen/typography_line_height_label_m</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+
+</resources>

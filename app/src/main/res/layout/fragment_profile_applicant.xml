@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.applicant.dashboard.profile.ProfileApplicantFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cv_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:visibility="visible"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayoutCompat"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:gravity="end"
+            android:background="@drawable/bg_header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/button_edit"
+                android:layout_width="50dp"
+                android:contentDescription="@string/button_edit"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_edit_black"
+                app:tint="@color/white"/>
+
+            <ImageButton
+                android:id="@+id/button_settings"
+                android:layout_width="50dp"
+                android:contentDescription="@string/button_settings"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_settings_black"
+                app:tint="@color/white"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_profile_applicant"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:contentDescription="@string/profile"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/profile_add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:text="@string/name"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_profile_applicant" />
+
+        <TextView
+            android:id="@+id/tvRole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:text="@string/mobile_development_expert"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+        <Button
+            android:id="@+id/button_aboutme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F9F9F9"
+            android:paddingVertical="20dp"
+            android:layout_marginHorizontal="30dp"
+            android:text="@string/about_me"
+            android:textColor="@color/black"
+            app:cornerRadius="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginTop="25dp"
+            android:drawableLeft="@drawable/ic_yellow_profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textAllCaps="false"
+            android:gravity="start|center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat" />
+
+        <Button
+            android:id="@+id/button_cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="20dp"
+            android:backgroundTint="#F9F9F9"
+            android:text="@string/curriculum_vitae"
+            android:textColor="@color/black"
+            app:cornerRadius="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_cv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textAllCaps="false"
+            android:gravity="start|center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/button_aboutme" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cv_empty_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:visibility="gone"
+        android:visibility="gone">
+
+
+        <ImageButton
+            android:id="@+id/button_settings_state"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/button_settings"
+            android:src="@drawable/ic_settings_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/black" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/emptyprofile"
+            android:contentDescription="@string/profile_kosong" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

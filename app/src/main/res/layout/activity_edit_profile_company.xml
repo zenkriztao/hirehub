@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_default"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvChangeabout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="left"
+            android:text="@string/change_about_company"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvChangeabout" />
+
+        <EditText
+            android:id="@+id/addName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/greyContinue"
+            android:background="@drawable/edit_text_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
+            android:paddingHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:hint="@string/name"
+            app:cornerRadius="30dp"/>
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/location"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/addLocation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/greyContinue"
+            android:background="@drawable/edit_text_background"
+            android:paddingHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:hint="@string/location"
+            app:cornerRadius="30dp"/>
+
+        <TextView
+            android:id="@+id/tvHeadOffice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/headOffice"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/addHeadOffice"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/greyContinue"
+            android:background="@drawable/edit_text_background"
+            android:paddingHorizontal="16dp"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/headOffice_hint"
+            app:cornerRadius="30dp"/>
+
+
+        <TextView
+            android:id="@+id/tvWebsite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/website"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/addWebsite"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/greyContinue"
+            android:background="@drawable/edit_text_background"
+            android:paddingHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/website_hint"
+            android:textSize="14sp"
+            app:cornerRadius="30dp"/>
+
+
+        <TextView
+            android:id="@+id/tvIndustry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/industry"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/addIndustry"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/greyContinue"
+            android:background="@drawable/edit_text_background"
+            android:paddingHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/industry_hint"
+            android:textSize="14sp"
+            app:cornerRadius="30dp"/>
+
+        <TextView
+            android:id="@+id/tvEmployeeSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/employee_size"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/addEmployeeSize"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/greyContinue"
+            android:background="@drawable/edit_text_background"
+            android:paddingHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/employee_size_hint"
+            android:textSize="14sp"
+            app:cornerRadius="30dp"/>
+
+        <TextView
+            android:id="@+id/tvAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/about_company"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/addDescription"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:drawablePadding="10dp"
+            android:textSize="14sp"
+            android:backgroundTint="@color/greyContinue"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginTop="10dp"
+            app:cornerRadius="30dp"
+            android:hint="@string/about_company"
+            android:inputType="textMultiLine"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginHorizontal="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:backgroundTint="#DD2025"
+                android:layout_marginEnd="8dp"
+                android:text="@string/cancel"
+               />
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:backgroundTint="#29BB26"
+                android:text="@string/save" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>

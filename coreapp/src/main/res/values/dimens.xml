@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- region margin   -->
+    <dimen name="margin_tiny">2dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_semimedium">6dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+    <dimen name="margin_semilarge">10dp</dimen>
+    <dimen name="margin_large">12dp</dimen>
+    <dimen name="margin_slarge">14dp</dimen>
+    <dimen name="margin_xlarge">16dp</dimen>
+    <dimen name="margin_sxlarge">18dp</dimen>
+    <dimen name="margin_xxlarge">20dp</dimen>
+    <dimen name="margin_sxxlarge">22dp</dimen>
+    <dimen name="margin_xxxlarge">24dp</dimen>
+    <dimen name="margin_x4large">28dp</dimen>
+    <dimen name="margin_x5large">30dp</dimen>
+    <dimen name="margin_x6large">32dp</dimen>
+    <dimen name="margin_x7large">34dp</dimen>
+    <dimen name="margin_x10large">40dp</dimen>
+    <!-- endregion   -->
+
+    <!--    region padding  -->
+    <dimen name="padding_tiny">2dp</dimen>
+    <dimen name="padding_small">4dp</dimen>
+    <dimen name="padding_ssmall">6dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_semilarge">10dp</dimen>
+    <dimen name="padding_large">12dp</dimen>
+    <dimen name="padding_slarge">14dp</dimen>
+    <dimen name="padding_xlarge">16dp</dimen>
+    <dimen name="padding_sxlarge">18dp</dimen>
+    <dimen name="padding_xxlarge">20dp</dimen>
+    <dimen name="padding_sxxlarge">22dp</dimen>
+    <dimen name="padding_xxxlarge">24dp</dimen>
+    <dimen name="padding_x4large">28dp</dimen>
+    <dimen name="padding_x5large">30dp</dimen>
+    <!--    endregion   -->
+
+    <!--    region radius-->
+    <dimen name="radius_small">8dp</dimen>
+    <dimen name="radius_medium">12dp</dimen>
+    <dimen name="radius_large">16dp</dimen>
+    <dimen name="radius_xlarge">24dp</dimen>
+    <dimen name="radius_xxlarge">48dp</dimen>
+    <!--    endregion-->
+
+    <!--    region icon-->
+    <dimen name="icon_size_xxs">12dp</dimen>
+    <dimen name="icon_size_xs">16dp</dimen>
+    <dimen name="icon_size_s">18dp</dimen>
+    <dimen name="icon_size_m">24dp</dimen>
+    <dimen name="icon_size_l">28dp</dimen>
+    <dimen name="icon_size_xl">32dp</dimen>
+    <dimen name="icon_size_xxl">36dp</dimen>
+    <!--    endregion-->
+
+    <!--    region image-->
+    <dimen name="image_size_s">32dp</dimen>
+    <dimen name="image_size_m">48dp</dimen>
+    <dimen name="image_size_l">64dp</dimen>
+    <dimen name="image_size_xl">80dp</dimen>
+    <dimen name="image_size_xxl">96dp</dimen>
+    <dimen name="image_size_xxxl">112dp</dimen>
+    <dimen name="image_size_x4large">148dp</dimen>
+    <dimen name="image_size_200">200dp</dimen>
+    <!--    endregion-->
+
+    <!--    region typography text size-->
+    <dimen name="typography_text_size_display_l">56sp</dimen>
+    <dimen name="typography_text_size_display_m">48sp</dimen>
+    <dimen name="typography_text_size_display_s">40sp</dimen>
+    <dimen name="typography_text_size_heading_l">32sp</dimen>
+    <dimen name="typography_text_size_heading_m">28sp</dimen>
+    <dimen name="typography_text_size_heading_s">24sp</dimen>
+    <dimen name="typography_text_size_paragraph_l">20sp</dimen>
+    <dimen name="typography_text_size_paragraph_m">16sp</dimen>
+    <dimen name="typography_text_size_paragraph_s">14sp</dimen>
+    <dimen name="typography_text_size_label_m">12sp</dimen>
+    <dimen name="typography_text_size_label_s">10sp</dimen>
+    <!--    endregion-->
+
+    <!--    region typography line height-->
+    <dimen name="typography_line_height_display_l">72sp</dimen>
+    <dimen name="typography_line_height_display_m">64sp</dimen>
+    <dimen name="typography_line_height_display_s">56sp</dimen>
+    <dimen name="typography_line_height_heading_l">44sp</dimen>
+    <dimen name="typography_line_height_heading_m">40sp</dimen>
+    <dimen name="typography_line_height_heading_s">36sp</dimen>
+    <dimen name="typography_line_height_paragraph_l">32sp</dimen>
+    <dimen name="typography_line_height_paragraph_m">24sp</dimen>
+    <dimen name="typography_line_height_paragraph_s">20sp</dimen>
+    <dimen name="typography_line_height_label_m">20sp</dimen>
+    <dimen name="typography_line_height_label_s">16sp</dimen>
+    <!--    endregion-->
+
+    <!--    region button height -->
+    <dimen name="button_height_xxs">32dp</dimen>
+    <dimen name="button_height_xs">36dp</dimen>
+    <dimen name="button_height_s">46dp</dimen>
+    <dimen name="button_height_m">52dp</dimen>
+    <dimen name="button_height_l">60dp</dimen>
+    <dimen name="button_height_xl">70dp</dimen>
+    <!--    endregion-->
+
+    <dimen name="progress_bar_size">40dp</dimen>
+    <dimen name="button_icon_size_default">@dimen/icon_size_xs</dimen>
+    <dimen name="button_icon_size_toolbar">@dimen/icon_size_xl</dimen>
+    <dimen name="button_text_size_default">28dp</dimen>
+    <dimen name="textinput_outlined_corner_radius">12dp</dimen>
+    <dimen name="textinput_outlined_corner_radius_circle">50dp</dimen>
+    <dimen name="textinput_edittext_layout_height">50dp</dimen>
+    <dimen name="bottom_nav_icon_size_default">24dp</dimen>
+    <dimen name="bottom_nav_min_height">64dp</dimen>
+    <dimen name="loading_chat_icon_size">80dp</dimen>
+    <dimen name="account_image_size">44dp</dimen>
+    <dimen name="account_image_size_large">54dp</dimen>
+    <dimen name="online_circle_size">14dp</dimen>
+
+    <dimen name="line_height_tiny">1dp</dimen>
+    <dimen name="line_height_small">2dp</dimen>
+    <dimen name="line_height_medium">4dp</dimen>
+
+    <dimen name="elevation_default">2dp</dimen>
+    <dimen name="elevation_bolder">4dp</dimen>
+
+    <dimen name="rating_bar_size">35dp</dimen>
+    <dimen name="rating_bar_margin">@dimen/margin_large</dimen>
+
+    <dimen name="bullet_size_default">@dimen/icon_size_xl</dimen>
+    <dimen name="bullet_size_small">@dimen/icon_size_l</dimen>
+    <dimen name="chat_prescription_item_height">32dp</dimen>
+    <dimen name="switch_account_size">32dp</dimen>
+
+    <dimen name="coachmark_min_width">152dp</dimen>
+
+    <dimen name="viewpager_next_item_visible">26dp</dimen>
+    <dimen name="viewpager_current_item_horizontal_margin">42dp</dimen>
+
+    <dimen name="tab_wrapper_height">66dp</dimen>
+    <dimen name="tab_height">42dp</dimen>
+
+    <item name="card_scale_up" format="float" type="dimen">1.2</item>
+
+    <dimen name="button_chat_icon_size">24dp</dimen>
+    <dimen name="selector_minimum_height">240dp</dimen>
+
+    <dimen name="verification_height">120dp</dimen>
+
+</resources>

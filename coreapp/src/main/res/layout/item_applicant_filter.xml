@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="8dp"
+    app:cardElevation="8dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_applicant"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:src="@tools:sample/avatars"
+            android:contentDescription="@string/applicant_image" />
+
+        <TextView
+            android:id="@+id/tv_applicant_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            android:textColor="#3B4145"
+            android:fontFamily="@font/poppins_semibold"
+            app:layout_constraintStart_toEndOf="@+id/iv_applicant"
+            app:layout_constraintTop_toTopOf="@+id/iv_applicant"
+            tools:text="Anya Forger" />
+
+        <TextView
+            android:id="@+id/tv_applicant_field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins"
+            android:lines="1"
+            android:textColor="#3B4145"
+            app:layout_constraintStart_toEndOf="@+id/iv_applicant"
+            app:layout_constraintTop_toBottomOf="@+id/tv_applicant_name"
+            tools:text="Mobile Developer" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

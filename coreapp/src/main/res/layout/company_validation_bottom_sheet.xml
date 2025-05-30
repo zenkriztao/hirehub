@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_bottom_toproundedwhite_xlarge"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="#3B4145"
+        android:text="Sorry, you haven't been validated yet"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:paddingTop="20dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvsubtitle"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="13sp"
+        android:text="Please wait or contact HireHub">
+    </TextView>
+
+
+
+    <Button
+        android:id="@+id/btn_contact"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="30dp"
+        android:textColor="#077CB6"
+        android:backgroundTint="#B9DAFB"
+        android:textSize="16sp"
+        app:cornerRadius="20dp"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginTop="20dp"
+        android:text="Contact HireHub"
+        android:textAllCaps="false"
+        android:layout_marginBottom="20dp"/>
+
+    <View
+        android:id="@+id/spacer"
+        android:layout_width="match_parent"
+        android:layout_height="12dp" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

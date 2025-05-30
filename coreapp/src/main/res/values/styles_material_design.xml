@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.TextInputLayout.OutlinedBox" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/textinput_outlined_corner_radius</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/textinput_outlined_corner_radius</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/textinput_outlined_corner_radius</item>
+        <item name="boxCornerRadiusTopStart">@dimen/textinput_outlined_corner_radius</item>
+        <item name="errorTextAppearance">@style/Typography.Rey.Label.Medium.Regular</item>
+        <item name="errorIconDrawable">@null</item>
+        <item name="boxStrokeColor">@color/textinputlayout_default_selector</item>
+        <item name="hintAnimationEnabled">false</item>
+        <item name="hintEnabled">false</item>
+        <item name="materialThemeOverlay">@style/TextInputLayout.ThemeOverlay</item>
+        <item name="shapeAppearanceOverlay">@style/TextInputLayout.ShapeAppearanceOverlay</item>
+        <item name="android:background">@drawable/bg_text_input_layout_default</item>
+    </style>
+
+    <style name="TextInputLayout.ThemeOverlay" parent="">
+        <item name="editTextStyle">@style/Widget.TextInputEditText.OutlinedBox</item>
+    </style>
+
+    <style name="Widget.TextInputEditText.OutlinedBox" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">@dimen/textinput_edittext_layout_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingTop">@dimen/padding_small</item>
+        <item name="android:paddingBottom">@dimen/padding_small</item>
+        <item name="android:textAppearance">@style/Typography.Rey.Paragraph.Small.Regular</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/textinputlayout_default_text_selector</item>
+        <item name="android:textColorHint">@color/textinputlayout_default_hint_selector</item>
+
+    </style>
+
+    <style name="TextInputLayout.ShapeAppearanceOverlay" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/radius_medium</item>
+    </style>
+
+</resources>

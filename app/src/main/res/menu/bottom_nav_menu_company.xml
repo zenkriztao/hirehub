@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home_company"
+        android:icon="@drawable/ic_nav_home"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_chat_company"
+        android:icon="@drawable/ic_nav_chat"
+        android:title="@string/chat" />
+
+    <item
+        android:id="@+id/navigation_history_company"
+        android:icon="@drawable/ic_nav_history"
+        android:title="@string/offering" />
+
+    <item
+        android:id="@+id/navigation_profile_company"
+        android:icon="@drawable/ic_nav_profile"
+        android:title="@string/profile" />
+</menu>

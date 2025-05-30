@@ -1,0 +1,31 @@
+package com.inkubasi.hirehub.coreapp.data.source.remote.endpoint
+
+object EndPoint {
+
+    const val SIGN_IN = "api/v1/auth/login"
+    const val SIGN_UP = "api/v1/auth/register"
+    const val GET_PROFILE_SELF_APPLICANT = "api/v1/applicant/profile/detail"
+    const val GET_PROFILE_APPLICANT = "api/v1/applicant/detail/{id}"
+    const val GET_PROFILE_SELF_COMPANY = "api/v1/company/profile/detail"
+    const val GET_PROFILE_COMPANY = "api/v1/company/detail/{id}"
+    const val UPLOAD_IMAGE = "api/v1/applicant/upload-image"
+    const val UPLOAD_IMAGE_COMPANY = "api/v1/company/upload-image"
+    const val UPLOAD_CV = "api/v1/applicant/upload-cv"
+    const val EDIT_PROFILE_SELF_APPLICANT = "api/v1/applicant/profile/edit"
+    const val EDIT_PROFILE_SELF_COMPANY = "api/v1/company/profile/edit"
+    const val OFFER_ON_PROSES_HISTORY_COMPANY = "api/v1/offer/company/onprocess-history"
+    const val OFFER_ACCEPT_HISTORY_COMPANY = "api/v1/offer/company/accept-history"
+    const val OFFER_REJECT_HISTORY_COMPANY = "api/v1/offer/company/reject-history"
+    const val OFFER_PENDING_HISTORY_APPLICANT = "api/v1/offer/applicant/pending-history"
+    const val OFFER_ON_PROSES_HISTORY_APPLICANT = "api/v1/offer/applicant/onprocess-history"
+    const val OFFER_ACCEPT_HISTORY_APPLICANT = "api/v1/offer/applicant/accept-history"
+    const val OFFER_REJECT_HISTORY_APPLICANT = "api/v1/offer/applicant/reject-history"
+    const val APPLICANT_ACCEPT_OFFER_BY_ID = "api/v1/offer/applicant/accept/{id}"
+    const val APPLICANT_REJECT_OFFER_BY_ID = "api/v1/offer/applicant/reject/{id}"
+    const val COMPANY_ACCEPT_OFFER_BY_ID = "api/v1/offer/company/accept/{id}"
+    const val COMPANY_REJECT_OFFER_BY_ID = "api/v1/offer/company/reject/{id}"
+    const val CREATE_OFFER_APPLICANT = "api/v1/offer/create"
+    const val APPLICANT_GET_LIST = "api/v1/applicant/list"
+    const val GET_TOKEN_STREAM = "api/v1/stream/token"
+    const val APPLICANT_RECOMMENDER_LIST = "api/v1/applicant/filter"
+}

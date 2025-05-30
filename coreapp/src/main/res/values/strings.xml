@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="profile_kosong">Profile Kosong</string>
+    <string name="isi_data_diri_kamu_supaya_di_lirik_perusahaan_impian">Isi data diri kamu, supaya di lirik perusahaan impian</string>
+    <string name="isi_otomatis_dengan_cv">Isi otomatis dengan CV</string>
+    <string name="isi_data_manual">Isi data manual</string>
+    <string name="open_gallery">Open gallery</string>
+    <string name="applicant_image">applicant image</string>
+    <string name="see_cv"><u>See CV</u></string>
+    <string name="keluar_dari_akun_hirehub">Keluar dari Akun Hirehub</string>
+    <string name="sign_out_confirmation">Apakah kamu yakin keluar dari akun profile hirebub kamu?</string>
+    <string name="cancel">Batalkan</string>
+    <string name="exit">Keluar</string>
+    <string name="company_data">Isi data company</string>
+    <string name="company_data_desc">Isi data profile company supaya lebih meyakinkan applicant</string>
+    <string name="next">Lanjut</string>
+    <string name="age">Umur</string>
+    <string name="salary">Gaji</string>
+    <string name="sample_skill">Problem Solving</string>
+    <string name="add">Tambah</string>
+    <string name="your_language">Bahasa yang dikuasai</string>
+    <string name="skill_cannot_empty">Skills tidak boleh kosong</string>
+    <string name="language_cant_empty">Language tidak boleh kosong</string>
+    <string name="min_age_cant_empty">Minimal umur tidak boleh kosong</string>
+    <string name="maks_age_cant_empty">Maksimal umur tidak boleh kosong</string>
+    <string name="tolerance_age_cant_empty">Toleransi umur tidak boleh kosong</string>
+    <string name="min_salary_cant_empty">Minimal gaji tidak boleh kosong</string>
+    <string name="maks_salary_cant_empty">Maksimal gaji tidak boleh kosong</string>
+    <string name="tolerance_salary_cant_empty">Toleransi gaji tidak boleh kosong</string>
+</resources>
